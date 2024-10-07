@@ -19,7 +19,7 @@ public class Main {
             double x = -b/a;
             System.out.println(x);
         }*/
-        System.out.println("Mời b nhập số nguyên c: ");
+        /*System.out.println("Mời b nhập số nguyên c: ");
         double c = Double.parseDouble(scanner.nextLine());
         //  a*x^2 + b*x +c = 0
         if(a == 0){
@@ -34,6 +34,6 @@ public class Main {
             } else {
 
             }
-        }
+        }*/
     }
 }
