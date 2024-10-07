@@ -18,7 +18,7 @@ public class Main {
 
         //System.out.println(sum);
         // chữa bài vòng lặp while
-        while (true){
+        /*while (true){
             System.out.println("Mời b nhập vào số nguyên N");
             int n = Integer.parseInt(scanner.nextLine()); // n=5 4 3
             sum +=n;
@@ -28,6 +28,19 @@ public class Main {
                 break;
             }
         }
-        System.out.println(sum);
+        System.out.println(sum);*/
+
+        String choose = "";
+        do {
+            System.out.println("Mời b nhập tên: ");
+            String name = scanner.nextLine();
+            System.out.println("Mời b nhập tuổi: ");
+            int age = Integer.parseInt(scanner.nextLine());
+            System.out.println("Tên của bạn là: "+ name+" - tuổi: "+age);
+
+            System.out.println("Do you want to continues?");
+            choose = scanner.nextLine();
+        } while (choose.equalsIgnoreCase("Y"));
+
     }
 }
