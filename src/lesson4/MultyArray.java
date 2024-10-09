@@ -19,6 +19,16 @@ public class MultyArray {
                 System.out.println(arr[i][j]);
             }
         }
+        int sum=0;
+        for (int i = 0; i < row; i++) {
+            for (int j = 0; j < column; j++) {
+                if(arr[i][j] %3 == 0){
+                    sum+= arr[i][j];
+                }
+            }
+        }
+        System.out.println(sum);
+
         for (int i = 0; i < row; i++) {
             for (int j = 0; j < column; j++) {
 
