@@ -12,9 +12,16 @@ public class Main {
         for (int a: arrA){
             System.out.println(a);
         }*/
-        printArray();
+       /* printArray();
         int multi = calculateMultiN();
-        System.out.println(multi);
+        System.out.println(multi);*/
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Mời b nhập số thứu 1: ");
+        int x = scanner.nextInt();
+        System.out.println("Mời b nhập số thứu 2: ");
+        int y = scanner.nextInt();
+        int a[] = {1,2,3,4,56};
+        calculateSum(a, y);
     }
 
     public static int calculateSum(){
@@ -32,25 +39,30 @@ public class Main {
         int c = a*b;
         System.out.println(c);
     }
-    // Viế hàm thực hiện tính in ra các giá trị trong 1 array bằng cách sử dụng hàm void
 
+    // Viế hàm thực hiện tính in ra các giá trị trong 1 array bằng cách sử dụng hàm void
     public static void printArray(){
         int arrA []= {1,5,2,5};
         for (int ar: arrA) {
             System.out.println(ar);
         }
     }
-    // Viêt hàm thực hiện tính tích các số nguyên từ 1-> n bằng hàm return
 
+    // Viêt hàm thực hiện tính tích các số nguyên từ 1-> n bằng hàm return
     public static int calculateMultiN (){
         System.out.println("Mời b nhập vào 1 số nguyên: ");
         Scanner scanner = new Scanner(System.in);
         int n= scanner.nextInt();
-        int multi = 1;
+        int multi = 1; // 1  * 1*2*3*4
         for (int i = 2; i <= n; i++) {
             multi*=i;
         }
         return multi;
+    }
+
+    public static void calculateSum(int [] a, int b){
+        //int c = a+b;
+        //System.out.println(c);
     }
 
 }
