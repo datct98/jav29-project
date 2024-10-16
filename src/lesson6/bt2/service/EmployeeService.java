@@ -16,8 +16,7 @@ public class EmployeeService {
         String placeWork = scanner.nextLine();
         System.out.println("Mời b nhập số năm kinh nghiệm: ");
         double exp = Double.parseDouble(scanner.nextLine());
-        Employee employee = new Employee(id, name, address, placeWork, exp);
-        return employee;
+        return new Employee(id, name, address, placeWork, exp);
 
     }
 

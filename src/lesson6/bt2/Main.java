@@ -9,8 +9,19 @@ public class Main {
     public static void main(String[] args) {
         EmployeeService eService = new EmployeeService();
         Scanner scanner = new Scanner(System.in);
-        Employee employee = eService.inputInfo(scanner);
-        eService.displayInfo(employee);
+        int n = Integer.parseInt(scanner.nextLine());
+        Employee arr [] = new Employee[n];
+
+        for (int i = 0; i <n ; i++) {
+            // Nhập thông tin cho 1 employee
+            Employee employee = eService.inputInfo(scanner);
+            arr[i] = employee;
+        }
+
+        for (int i = 0; i < n; i++) {
+            System.out.println(arr[i]);
+        }
+        //eService.displayInfo(employee);
 
     }
 }
