@@ -5,4 +5,6 @@ public class Chinese extends Person{
     public String saySomething() {
         return "Chinese";
     }
+
+    public void testChinese(){}
 }

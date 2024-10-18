@@ -6,12 +6,16 @@ import lesson7.demo.Vietnamese;
 
 public class Main {
     public static void main(String[] args) {
-        Person person = new Chinese();
-        String sth= person.saySomething();
-        System.out.println(sth);
+        Chinese chinese = new Chinese();
+        String chineseSay = chinese.saySomething();
+        System.out.println(chineseSay);
+        chinese.testPerson();
+        chinese.testChinese();
 
-        Person vn = new Vietnamese();
-        String sthVn= vn.saySomething();
-        System.out.println(sthVn);
+        Person chinese2 = new Chinese();
+        String chineseSay2 = chinese2.saySomething();
+        System.out.println(chineseSay2);
+        chinese2.testPerson();
+        chinese2.testPerson();
     }
 }
