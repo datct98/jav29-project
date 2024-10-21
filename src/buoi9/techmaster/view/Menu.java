@@ -22,7 +22,6 @@ public class Menu {
         int choose = Integer.parseInt(scanner.nextLine());
         switch (choose){
             case 1:
-                //TODO hiển thị thông tin của trung tâm
                 System.out.println(techmaster);
                 break;
             case 2:
@@ -32,9 +31,10 @@ public class Menu {
                 break;
             case 3:
                 // Update student
+                studentService.updateClassify(scanner,techmaster);
                 break;
             case 4:
-                // Delete
+                // Delete todo
                 break;
             default:
                 System.exit(0);
