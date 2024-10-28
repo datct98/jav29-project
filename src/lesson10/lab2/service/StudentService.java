@@ -7,6 +7,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class StudentService {
+    Scanner scanner = new Scanner(System.in);
     public Student inputInfo(Scanner scanner){
         System.out.println("Mời b nhập tên hs: ");
         String name = scanner.nextLine();
