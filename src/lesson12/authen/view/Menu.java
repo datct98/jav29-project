@@ -36,7 +36,8 @@ public class Menu {
                 // Login
                 System.out.println("Login");
                 User user = userService.login(scanner);
-                switch (user.getRole()){
+                displayMenuPostLogin(scanner);
+                /*switch (user.getRole()){
                     case 1:
                         displayMenuForAdmin(scanner);
                         break;
@@ -48,7 +49,7 @@ public class Menu {
                         break;
                     default:
                         System.exit(0);
-                }
+                }*/
                 break;
             case 2:
                 // Register
