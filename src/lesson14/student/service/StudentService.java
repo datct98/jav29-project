@@ -2,6 +2,7 @@ package lesson14.student.service;
 
 import lesson14.student.data.DataBase;
 import lesson14.student.entities.Student;
+import lesson14.student.exception.InvalidAgeException;
 import lesson14.student.utils.Utils;
 
 import java.util.ArrayList;
@@ -15,6 +16,13 @@ public class StudentService {
             String name = scanner.nextLine();
             System.out.println("Mời b nhập tuổi");
             int age = Utils.inputInteger(scanner);
+
+            try {
+                checkValidAge(age);
+            } catch (InvalidAgeException e) {
+                System.out.println(e.getMessage());
+                continue;
+            }
             Student student = new Student(name, age);
             DataBase.students.add(student);
 
@@ -24,5 +32,10 @@ public class StudentService {
                 break;
         } while (true);
 
+    }
+
+    private void checkValidAge(int age) throws InvalidAgeException {
+        if(age<0 || age >99)
+            throw new InvalidAgeException("Tuổi phải nằm trong khoảng từ 1 - 99");
     }
 }
