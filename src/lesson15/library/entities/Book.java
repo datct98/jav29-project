@@ -5,6 +5,7 @@ public class Book {
     private int id;
     private String name;
     private String status;
+    // Số lượng sách trong kho
     private int quantity;
 
     public Book( String name, String status, int quantity) {

@@ -16,6 +16,7 @@ public class Menu {
         System.out.println("4- Thêm mới sách");
         System.out.println("5- Cập nhật thông tin sách");
         System.out.println("6- Xóa sách");
+        System.out.println("7- Mượn sách");
         System.out.println("Mời b lựa chọn");
         selectMenu(scanner, customers);
     }
@@ -37,6 +38,8 @@ public class Menu {
             case 5:
                 break;
             case 6:
+                break;
+            case 7:
                 break;
         }
     }

@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class CustomerService implements ActionService<Customer>{
 
-    private Customer findById(int id, ArrayList<Customer> customers ){
+    public Customer findById(int id, ArrayList<Customer> customers ){
         for (Customer customer: customers){
             if(customer.getId() == id){
                 // Tìm thấy

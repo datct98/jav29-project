@@ -11,7 +11,7 @@ public class Main {
         // Customer: id, name, phone
         // Book: id, name, quantity, status
         // Yêu cầu: - Hiển thị menu
-        //          - Thêm/ sửa/ xóa cho book và customer
+        //          - Thêm/ sửa/ xóa cho book và customer, TicketBook
 
 
 

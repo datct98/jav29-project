@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class BookService implements ActionService<Book>{
 
-    private Book findById(int id, ArrayList<Book> books ){
+    public Book findById(int id, ArrayList<Book> books ){
         for (Book book: books){
             if(book.getId() == id){
                 // Tìm thấy
