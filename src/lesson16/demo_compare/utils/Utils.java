@@ -33,4 +33,17 @@ public class Utils {
         }
         return null;
     }
+
+    public static int inputAge(Scanner scanner) throws CustomException {
+        try {
+            System.out.println("Mời b nhập định dạng số nguyên");
+            int n = Integer.parseInt(scanner.nextLine());
+            if(n < 0 || n>= 100)
+                throw new CustomException("Định dạng tuổi không hợp lệ, vui lòng nhập tuổi trong khoảng (1-99)");
+            return n;
+        } catch (NumberFormatException numberFormatException){
+            throw new NumberFormatException("Sai định dạng số nguyên");
+        }
+
+    }
 }

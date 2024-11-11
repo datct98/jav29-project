@@ -14,13 +14,17 @@ public class StudentService {
         System.out.println("Mời b nhập thành phố: ");
         String country = scanner.nextLine();
         do {
+
+
             try {
+                System.out.println("Mời b nhập tuổi");
+                int age = Utils.inputAge(scanner);
                 System.out.println("Mời b nhập ngày tháng năm sinh (yyyy-MM-dd):");
                 String birthDay = scanner.nextLine();
                 LocalDate birthDate = Utils.inputLocalDate(birthDay, "yyyy-MM-dd");
                 return new Student(name, country, birthDate);
             } catch (CustomException customException){
-                System.out.println("Lỗi sai định dạng thời gian, vui lòng nhập lại");
+                System.out.println(customException.getMessage());
             } catch (Exception e){
                 System.out.println("Lỗi: "+e);
             }
